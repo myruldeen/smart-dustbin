@@ -20,7 +20,7 @@ def on_message(client, userdata, message):
     print("GARBAGE UPDATE'" + str(message.payload) +"%' Filled'")
     
     if message.topic == "/esp8266/ultra":
-        print("S W A C H H  B H A R A T")
+        print("SMART DUSTBIN DEMO")
         
 mqttc=mqtt.Client()
 mqttc.on_connect = on_connect
