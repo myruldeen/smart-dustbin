@@ -1,16 +1,16 @@
 # smart-dustbin
 ## Here is the list of commands that is required for successful installation of mosquitto and mosquitto clients on the raspbian buster OS.
-sudo apt-get update
-wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
-sudo apt-key add mosquitto-repo.gpg.key
-cd /etc/apt/sources.list.d/
-sudo wget http://repo.mosquitto.org/debian/mosquitto-stretch.list
-sudo apt-get update
-cd ~
-sudo apt-get update
-sudo apt-get install mosquitto mosquitto-clients
-sudo /etc/init.d/mosquitto stop
-sudo nano /etc/mosquitto/mosquitto.conf
+sudo apt-get update  
+wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key  
+sudo apt-key add mosquitto-repo.gpg.key  
+cd /etc/apt/sources.list.d/  
+sudo wget http://repo.mosquitto.org/debian/mosquitto-stretch.list  
+sudo apt-get update  
+cd ~  
+sudo apt-get update  
+sudo apt-get install mosquitto mosquitto-clients  
+sudo /etc/init.d/mosquitto stop  
+sudo nano /etc/mosquitto/mosquitto.conf  
 
 ## Delete these lines in the mosquitto.conf file
 log_dest file /var/log/mosquito/mosquito.log
